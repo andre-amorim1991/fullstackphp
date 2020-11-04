@@ -8,15 +8,17 @@
     <script src="js/funcoes.js"></script>
 </head>
 
-<body>
-    <div class="menu">
-        <nave>
-            <a href="index.html"><img src="img/logo_full_stack_eletro.jpeg"></a>
-            <a href="produtos.html">Produtos</a>
-            <a href="lojas.html">Lojas</a>
-            <a href="contatos.html">Contatos</a>
-        </nave>
-    </div>
+<body> 
+    <header>
+        <div class="menu">
+       
+             <!-- Menu -->
+            <?php
+                include_once('menu.html');
+            ?>
+        </div>
+    </header>    
+    
     <div class="principal">
         <main>
             <h2>Bem Vindo(a)</h2>

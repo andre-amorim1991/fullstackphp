@@ -1,3 +1,30 @@
+<?php
+    $servername = "localhost";
+    $username = "root";
+    $password ="";
+    $database = "fseletro";
+
+    $conn = mysqli_connect($servername, $username, $password, $database);
+
+
+    if (!$conn) {
+        die("A conexão com BD falhou: " . mysqli_connect_error());
+    }
+
+    $sql = "select * from produtos";
+    $result = $conn->query($sql);
+
+    if($result->num_rows > 0) {
+            while($rows = $result->fetch_assoc()){
+                echo $rows["categoria"];
+            }
+    }else {
+        echo "Nenhum produto cadastrado!";
+    }
+
+?>
+
+
 <!DOCTYPE HTML>
 <html lang=PT-BR>
 
@@ -9,14 +36,12 @@
 </head>
 
 <body>
-    <div class="menu">
-        <nave>
-            <a href="index.html"><img src="img/logo_full_stack_eletro.jpeg"></a>
-            <a href="produtos.html">Produtos</a>
-            <a href="lojas.html">Lojas</a>
-            <a href="contatos.html">Contatos</a>
-        </nave>
-    </div>
+    <header>
+        <!-- Menu -->
+        <?php
+            include_once('menu.html');
+        ?>
+    </header>    
     <div class="principal">
         <main>
             <h2>Bem Vindo(a)</h2>

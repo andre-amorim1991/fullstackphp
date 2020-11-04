@@ -10,14 +10,10 @@
 
 <body>
     <header>
-        <div class="menu">
-            <nave>
-                <a href="index.html"><img src="img/logo_full_stack_eletro.jpeg"></a>
-                <a href="produtos.html">Produtos</a>
-                <a href="lojas.html">Lojas</a>
-                <a href="contatos.html">Contatos</a>
-            </nave>
-        </div>
+        <!-- Menu -->
+        <?php
+            include_once('menu.html');
+        ?>
     </header>
     <div class="principal">
         <main>
