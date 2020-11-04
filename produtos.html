@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+<html lang=PT-BR>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Full Stack Eletro</title>
+    <link rel="stylesheet" href="css/stilo.css">
+    <script src="js/funcoes.js"></script>
+</head>
+
+<body>
+    <div class="menu">
+        <nave>
+            <a href="index.html"><img src="img/logo_full_stack_eletro.jpeg"></a>
+            <a href="produtos.html">Produtos</a>
+            <a href="lojas.html">Lojas</a>
+            <a href="contatos.html">Contatos</a>
+        </nave>
+    </div>
+    <div class="principal">
+        <main>
+            <h2>Bem Vindo(a)</h2>
+            <br>
+            <p>A maior loja de eletrodoméstico on-line do Brasil.<br>
+                <em>Aqui Programadores tem <b>descontos</b> especias para toda sua casa!</em></p><br>
+            <hr>
+            <br>
+        </main>
+    </div>
+    <div class="categorias">
+        <ul>
+            <li onclick="exibir_todos()">Todos (12)</li>
+            <li onclick="exibir_categoria('geladeira')">Geladeiras (3)</li>
+            <li onclick="exibir_categoria('fogao')">Fogões (2)</li>
+            <li onclick="exibir_categoria('microondas')">Microondas (3)</li>
+            <li onclick="exibir_categoria('lavaroupas')">Lava roupas (2)</li>
+            <li onclick="exibir_categoria('lavaloucas')">Lava louças(2)</li>
+        </ul>
+    </div>
+    <div class="produtos" id="geladeira">
+        <p class="geladeira"><img src="img/geladeira-consul.jpeg" alt="geladeira Consul prata" width="140px"
+                height="140px" onclick="destaque(this)"></p>
+        <p class="descricao">Geladeria Consul 520 Litros</p>
+        <p class="precoantigo">R$ 3.560,00</p>
+        <p class="preconovo">R$ 3.099,00</p>
+        <hr>
+        <br>
+
+    </div>
+    <div class="produtos" id="geladeira">
+        <p class="geladeira"><img src="img/geladeira-brastemp.jpg" alt="geladeira Brastemp preta" width="140px"
+                height="140px" onclick="destaque(this)"></p>
+        <p class="descricao">Geladeira Duplex Brastemp 600 Litros</p>
+        <p class="precoantigo">R$ 5.399,00</p>
+        <p class="preconovo">R$ 4.990,00</p>
+        <hr>
+        <br>
+
+    </div>
+    <div class="produtos" id="geladeira">
+
+        <p class="geladeira"><img src="img/geladeira-brastemp-branca.jpeg" alt="geladeira Brastemp Branca" width="140px"
+                height="140px" onclick="destaque(this)"></p>
+        <p class="descricao">Geladeira Brastemp 550 Litros</p>
+        <p class="precoantigo">R$ 4.399,00</p>
+        <p class="preconovo">R$ 3.999,00</p>
+        <hr>
+        <br>
+
+    </div>
+    <div class="produtos" id="fogao">
+
+        <p class="geladeira"><img src="img/fogao-eletrolux.jpeg" alt="Fogão Eletrolux" width="140px" height="140px" onclick="destaque(this)"></p>
+        <p class="descricao">Fogão Eletrolux</p>
+        <p class="precoantigo">R$ 1.290,00</p>
+        <p class="preconovo">R$ 959,90</p>
+        <hr>
+        <br>
+
+    </div>
+    <div class="produtos" id="fogao">
+
+        <p class="geladeira"><img src="img/fogao-prata.jpeg" alt="Fogão Consul prata" width="140px" height="140px" onclick="destaque(this)"></p>
+
+        <p class="descricao">Fogão Consul</p>
+        <p class="precoantigo">R$ 1.429,00</p>
+        <p class="preconovo">R$ 1.099,90</p>
+        <hr>
+        <br>
+
+    </div>
+    <div class="produtos" id="microondas">
+
+        <p class="geladeira"><img src="img/microndas-eletrolux.jpeg" alt="Microondas Eletrolux" width="140px"
+                height="140px" onclick="destaque(this)"></p>
+        <p class="descricao">Microondas Eletrolux 33 Litros</p>
+        <p class="precoantigo">R$ 859,00</p>
+        <p class="preconovo">R$ 659,90</p>
+        <hr>
+        <br>
+
+    </div>
+    <div class="produtos" id="microondas">
+
+        <p class="geladeira"><img src="img/microondas-panasonic.jpeg" alt="Microondas Panasonic" width="140px"
+                height="140px" onclick="destaque(this)"></p>
+        <p class="descricao">Nicroondas Panasonic 29 Litros</p>
+        <p class="precoantigo">R$ 729,90</p>
+        <p class="preconovo">R$ 559,99</p>
+        <hr>
+        <br>
+
+    </div>
+    <div class="produtos" id="microondas">
+
+        <p class="geladeira"><img src="img/microondas.jpeg" alt="Microondas Consul" width="140px" height="140px" onclick="destaque(this)">
+        </p>
+        <p class="descricao">Microondas Consul 25 Litros</p>
+        <p class="precoantigo">R$ 679,00</p>
+        <p class="preconovo">R$ 529,90</p>
+        <hr>
+        <br>
+
+    </div>
+    <div class="produtos" id="lavaroupas">
+
+        <p class="geladeira"><img src="img/lava-roupa-consul.jpeg" alt="Lava Roupa Consul" width="140px" height="140px" onclick="destaque(this)">
+        </p>
+        <p class="descricao">Lava roupas Consul</p>
+        <p class="precoantigo">R$ 2.925,10</p>
+        <p class="preconovo">R$ 2.199,99</p>
+        <hr>
+        <br>
+
+    </div>
+    <div class="produtos" id="lavaroupas">
+
+        <p class="geladeira"><img src="img/lava-roupa-eletrolux.jpeg" alt="Lava roupa Eletro Luz" width="140px"
+                height="140px" onclick="destaque(this)"></p>
+        <p class="descricao">Lava de roupas Eletrolux</p>
+        <p class="precoantigo">R$ 1.649,00</p>
+        <p class="preconovo">R$ 1.199,00</p>
+        <hr>
+        <br>
+
+    </div>
+    <div class="produtos" id="lavaloucas">
+
+        <p class="geladeira"><img src="img/lava-louca-consul.jpeg" alt="Lava louça Consul" width="140px" height="140px" onclick="destaque(this)">
+        </p>
+        <p class="descricao">Lava-Louças Consul</p>
+        <p class="precoantigo">R$ 2.564,00</p>
+        <p class="preconovo">R$ 1.799,00</p>
+        <hr>
+        <br>
+
+    </div>
+    <div class="produtos" id="lavaloucas">
+
+        <p class="geladeira"><img src="img/lava-louca-eletrolux.jpg" alt="Lava louça Eletrolux" width="140px"
+                height="140px" onclick="destaque(this)"></p>
+        <p class="descricao">Lava-louça Eletrolux</p>
+        <p class="precoantigo">R$ 3.284,00</p>
+        <p class="preconovo">R$ 2.350,00</p>
+        <hr>
+        <br>
+    </div>
+</body>
+<footer class="rodape">
+    <h3>Formas de pagamento</h3>
+    <a><img src="img/pagamentos.png" width="500px"> </a>
+    <p>&copy; Recode Pro 2020<br>
+        desenvolvido por André Amorim</p>
+
+</footer>
+
+</html>
