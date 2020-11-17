@@ -61,10 +61,10 @@
     </section>
     <form method="post" action="">
         <h4>Nome: </h4>
-        <input type="text" style="width: 400px;" placeholder="Digite aqui seu noome">
+        <input type="text" name="nome" style="width: 400px;" placeholder="Digite aqui seu nome">
         <br><br>
         <h4>Mensagem: </h4>
-        <textarea style="width: 400px" value="Enviar" placeholder="Digite aqui sua mensagem"></textarea>
+        <textarea style="width: 400px" name="msg" value="Enviar" placeholder="Digite aqui sua mensagem"></textarea>
         <br>
         <br>
 
